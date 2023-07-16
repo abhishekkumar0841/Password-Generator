@@ -9,17 +9,16 @@ const numbers = "0123456789"
 const symbols = "~!@#$%^&*()_-+=\|,<.>/?';:'[{}]";
 
 const allCharacters = uppperCase + lowerCase + numbers + symbols;
-console.log(allCharacters)
 
 function createPassword(){
     let password = "";
-    password += uppperCase[Math.floor(Math.random() * uppperCase.length + 1)];
-    password += lowerCase[Math.floor(Math.random() * lowerCase.length +1)];
-    password += numbers[Math.floor(Math.random() * numbers.length + 1)];
-    password += symbols[Math.floor(Math.random() * symbols.length + 1)];
+    password += uppperCase[Math.floor(Math.random() * uppperCase.length)];
+    password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
+    password += numbers[Math.floor(Math.random() * numbers.length)];
+    password += symbols[Math.floor(Math.random() * symbols.length)];
 
     while(passwordLength > password.length){
-        password += allCharacters[Math.floor(Math.random() * allCharacters.length + 1)]
+        password += allCharacters[Math.floor(Math.random() * allCharacters.length)]
     }
     passwordInput.value = password;
 }

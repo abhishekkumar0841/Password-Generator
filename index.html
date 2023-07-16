@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!-- <script src="https://kit.fontawesome.com/65ef7a00e7.js" crossorigin="anonymous"></script> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
 <body>
     
-    <div class="container">
+    <div class="bg-slate-500 h-[100vh] p-[50px]">
 
-        <h1>Generate Password</h1>
+        <h1 class="text-center font-bold text-[2rem]">Generate Password</h1>
         
-        <div class="display">
-            <input type="text" id="password" placeholder="Password">
+        <div class="border-4 border-black w-[50%] m-auto mt-[100px] p-[3rem] relative">
+            <input type="text" id="password" placeholder="Password" class="w-[100%] p-[0.5rem] text-[1.5rem] font-bold">
             <!-- <i class="fa-sharp fa-light fa-copy"></i> -->
-            <img src="./images/copy.png" width="40px" alt="" id="copy">
-            <button id="btn"><img src="./images/thunders.png" width="40px" alt="">Generate Password</button>
+            <img src="./images/copy.png" alt="" id="copy" class="w-[2.5rem] absolute top-[3.3rem] right-[3rem] cursor-pointer">
+            <button id="btn" class="border-4 border-black flex items-center justify-evenly mt-[2rem] text-[1.5rem] w-[50%] m-auto p-[0.5rem] font-bold"><img src="./images/thunders.png" width="40px" alt="">Generate Password</button>
         </div>
 
     </div>
