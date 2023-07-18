@@ -32,3 +32,4 @@ function passwordCopied(){
     // document.execCommand("copy")
     navigator.clipboard.writeText(passwordInput.value);
 }
+
