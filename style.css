@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container{
@@ -42,6 +45,21 @@ input{
     user-select: none;
 }
 
+.message{
+    position: absolute;
+    right: 0.3em;
+    top: 0rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    color: greenyellow;
+    letter-spacing: 3px;
+    font-weight: 900;
+    font-size: 1rem;
+
+    opacity: 0;
+    transition: all 0.3s;
+}
+
 button{
     display: flex;
     align-items: center;
@@ -55,5 +73,7 @@ button{
     top: 20%;
     cursor: pointer;
 }
+
+
 
 
